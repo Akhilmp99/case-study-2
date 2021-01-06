@@ -1,5 +1,6 @@
 const express =require(`express`);
 const booksRouter =express.Router();
+const Bookdata = require(`../model/Bookdata`);
 
 
 var books = [
@@ -53,6 +54,8 @@ var books = [
 ]
 
 booksRouter.get(`/` , function(req,res){
+    Bookdata.find()
+    .then(function(books){
     res.render("Books",
     {
        nav:[{link:`/books`,name:`Books`},{link:`Author`,name:`author`}],
@@ -61,10 +64,11 @@ booksRouter.get(`/` , function(req,res){
     });
 });
 
-
+})
 
 booksRouter.get(`/:id`,function(req,res){
     const id = req.params.id
+    Bookdata.findOne({_id: id})
     res.render(`Book`,
     {
         nav:[{link:`/books`,name:`Books`},{link:`Author`,name:`author`}],

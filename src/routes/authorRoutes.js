@@ -6,7 +6,7 @@ var authors = [
         title:`Thunchanththu Ezhuthachan`,
         language:`Malayalam`,
         genre:`poem`,
-        img:`thunchathu.jpeg`,
+        image:`thunchathu.jpeg`,
         deb:`Thunchaththu Ramanujan Ezhuthachan (Malayalam: തുഞ്ചത്ത് രാമാനുജൻ എഴുത്തച്ഛൻ, Tuñcattŭ Rāmānujan Eḻuttacchan) was an Malayalam devotional poet and linguist from around the 16th century. He is today known as the father of Malayalam language – the principal language of the Indian state of Kerala and the union territory of Lakshadweep – and it's literature.
         Ezhuthachan was born in Trikkantiyur, near the present day Tirur municipality, in south Malabar in an under-privileged sudra caste. After the birth of his daughter, Ezhuthachan became a monk and wandered throughout southern India before finally building his monastery at modern day Chittoor, Palghat.
         Ezhuthachan's contribution to the Malayalam language is widely considered as unparalleled. He brought massive changes and standardisation in the language through his works. He translated the two Hindu epics, the Ramayana and Mahabharata, to Malayalam for the common man with the mingling of the Sanskrit and Dravidian languages`        

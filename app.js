@@ -45,6 +45,25 @@ app.get(`/login`, function(req,res){
 });
 
 
+app.get(`/add`,function(req,res){
+    res.render(`add`,
+        {
+            nav:[{link:`/admin`,name:`Add book`},{link:`/add`,name:`Add Author`}],
+            title:`Library` 
+         });
+     });
+     app.get(`/add`,function(req,res){
+        var item={
+            title:req.query.title,
+            author:req.query.author,
+            genre:req.query.genre,
+            img:req.query.image 
+        }
+     var author= authordata(item)
+     author.save();
+     res.redirect('/authors');
+    })
+
 
 app.listen(port,()=>{console.log("server Ready at" + port)});
 
